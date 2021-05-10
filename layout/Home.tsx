@@ -1,4 +1,3 @@
-import { useLayoutEffect } from 'react';
 import Head from 'next/head';
 
 interface HomeLayoutProps {
