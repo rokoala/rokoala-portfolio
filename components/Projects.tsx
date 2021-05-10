@@ -6,11 +6,11 @@ interface Props {
 }
 
 const Projects: React.FC<Props> = ({ projects }) => (
-  <div className="flex flex-wrap space-x-3 space-y-4 md:space-y-0">
+  <div className="flex flex-wrap items-start">
     {projects.map((project) => (
       <article
         key={project.id}
-        className="flex flex-column md:max-w-xs w-60 full-w"
+        className="flex flex-column m-5 md:max-w-xs w-full"
       >
         <BrowserCard>
           <a className="flex-none h-auto w-full" href={project.link}>
